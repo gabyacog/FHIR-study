@@ -1,0 +1,8 @@
+
+Pok Abbott
+
+window.fhir.api.search({type: "Patient", query: {given: ["John", "Bob"], family: "Smith"}}).then(function(pt) { window.r = pt; })
+
+https://sb-fhir-dstu2.smarthealthit.org/smartdstu2/data/Patient?given=John|Bob&family=Smith
+
+var smart = FHIR.client({serviceUrl: 'https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/data', patientId: 'SMART-1137192'});
